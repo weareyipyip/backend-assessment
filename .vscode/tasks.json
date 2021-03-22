@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run",
+      "type": "shell",
+      "command": "iex -S mix phx.server",
+      "group":{
+        "kind": "build",
+        "isDefault": true
+      },
+    },
+    {
+      "label": "Install dependencies",
+      "type": "shell",
+      "command": "mix deps.get"
+    },
+    {
+      "label": "(Re)migrate & seed DB",
+      "type": "shell",
+      "command": "mix do ecto.drop, ecto.create, ecto.migrate, run priv/repo/seeds.exs"
+    },
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "MIX_ENV=test mix test",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "First run (do everything)",
+      "type": "shell",
+      "command": "iex -S mix do deps.get, ecto.drop, ecto.create, ecto.migrate, run priv/repo/seeds.exs, phx.server"
+    }
+  ]
+}

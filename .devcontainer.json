@@ -1,0 +1,14 @@
+{
+    "name": "Music Meta DevContainer",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/application",
+    "extensions": [
+        "editorconfig.editorconfig",
+        "visualstudioexptteam.vscodeintellicode",
+        "codezombiech.gitignore",
+        "jakebecker.elixir-ls",
+        "pgourlain.erlang",
+        "benvp.vscode-hex-pm-intellisense",
+    ]
+}

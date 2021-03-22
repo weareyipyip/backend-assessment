@@ -1,19 +1,25 @@
 # MusicMeta
 
-To start your Phoenix server:
+You can hack at this code with a local Erlang/Elixir installation or use a VS Code devcontainer which relies only on Docker Compose being available. If this is your first rodeo, the latter is highly recommended. Just open the project in Visual Studio Code and click "yes" when prompted to use a dev container.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+## Useful commands
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+These commands are also available as tasks in [.vscode/tasks.json](.vscode/tasks.json).
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+Install dependencies:
+`mix deps.get`
 
-## Learn more
+Apply DB migrations:
+`mix ecto.migrate`
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Apply DB seeds:
+`mix run priv/repo/seeds.exs`
+
+Run the app:
+`mix phx.server`
+
+Run an interactive iEx shell (with local deps loaded):
+`iex -S mix`
+
+Run the app with an attached iEx shell (recommended):
+`iex -S mix phx.server`
