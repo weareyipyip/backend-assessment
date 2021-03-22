@@ -2,7 +2,7 @@
 
 ## Assignment
 
-Your assignment, should you choose to accept it, is to create a set of RESTful endpoints in a small JSON API for managing the metadata of a music collection. The underlying data should be stored in Postgres. The following endpoints should be created at least:
+Your assignment, should you choose to accept it, is to create a set of RESTful endpoints in a small JSON API for managing the metadata of a music collection, using [Elixir](https://hexdocs.pm/elixir/Kernel.html) and [Phoenix](https://hexdocs.pm/phoenix/overview.html). The underlying data should be stored in Postgres. The following endpoints should be created at least:
 
 - GET `/api/albums` - list of albums
 - POST `/api/albums` - add a new album
