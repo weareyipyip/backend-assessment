@@ -1,0 +1,18 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\config",
+    "\\lib",
+    "\\lib\\music_meta_web",
+    "\\lib\\music_meta_web\\channels",
+    "\\lib\\music_meta_web\\views",
+    "\\priv",
+    "\\priv\\repo",
+    "\\priv\\repo\\migrations",
+    "\\test",
+    "\\test\\music_meta_web",
+    "\\test\\support"
+  ],
+  "SelectedNode": "\\config\\config.exs",
+  "PreviewInSolutionExplorer": false
+}

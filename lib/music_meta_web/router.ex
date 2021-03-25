@@ -7,6 +7,22 @@ defmodule MusicMetaWeb.Router do
 
   scope "/api", MusicMetaWeb do
     pipe_through :api
+
+    # send data with Content-Type: application/json and json body for example
+    # {
+    #   "album" : {
+    #     "artist" : "new artist",
+    # 	  "title"  : "new title",
+    # 	  "year"   : "2020"
+    #           }
+    # }
+    resources "/albums", AlbumController, except: [:new, :edit] do
+      get "/albums", AlbumController, :index
+      get "/albums/:id", AlbumController, :show
+      post "/albums", AlbumController, :create
+      put "/albums/:id", AlbumController, :update
+      delete "/albums/:id", AlbumController, :delete
+    end
   end
 
   # Enables LiveDashboard only for development
