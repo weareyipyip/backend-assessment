@@ -2,7 +2,7 @@ import Config
 
 config :music_meta, MusicMetaWeb.Endpoint,
   debug_errors: false,
-  code_reloader: true,
+  code_reloader: false,
   check_origin: false,
   watchers: []
 
